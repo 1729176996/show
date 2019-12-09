@@ -1,0 +1,42 @@
+/* vue页面没有渲染完之前不可见 */
+[v-cloak]{
+    display:none;
+}
+/* 通用 */
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* 页面主体 */
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:30;
+}
+/* 可滑动内容 */
+.content{
+    width: 100%;
+    overflow: hidden;
+    flex:1;
+}
+
+.flex{
+    flex:1;
+}
+
+.none{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+li{
+    width: 100%;
+    height: auto;
+}
